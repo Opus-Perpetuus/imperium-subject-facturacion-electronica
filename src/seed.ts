@@ -12,7 +12,7 @@ export async function seed_demo(ctx: {
   await ctx.data.insert("cfdi", {
     id: new_id("cfdi"),
     name: "Facturación electrónica (ejemplo)",
-    description: "Registro semilla del súbdito. Sustituye al migrar desde Mongo.",
+    description: "Registro semilla de la app. Sustituye al migrar desde Mongo.",
     is_active: true,
     ref: "seed-facturacion-electronica",
     created_at: ts,
