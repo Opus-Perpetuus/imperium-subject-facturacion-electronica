@@ -47,6 +47,42 @@
       "label": "Editar Cfdi Issuer Profile"
     }
   ],
+  "menu": [
+    {
+      "id": "facturacion-electronica.root",
+      "label": "Facturación electrónica",
+      "order": 0,
+      "children": [
+        {
+          "id": "facturacion-electronica.cfdi-catalog",
+          "label": "Cfdi Catalog",
+          "pageId": "facturacion-electronica.cfdi-catalog",
+          "order": 0,
+          "path": "cfdi-catalog",
+          "permission": "subject.facturacion-electronica.cfdi-catalog.read",
+          "icon": "document"
+        },
+        {
+          "id": "facturacion-electronica.cfdi-document",
+          "label": "Cfdi Document",
+          "pageId": "facturacion-electronica.cfdi-document",
+          "order": 0,
+          "path": "cfdi-document",
+          "permission": "subject.facturacion-electronica.cfdi-document.read",
+          "icon": "document"
+        },
+        {
+          "id": "facturacion-electronica.cfdi-issuer-profile",
+          "label": "Cfdi Issuer Profile",
+          "pageId": "facturacion-electronica.cfdi-issuer-profile",
+          "order": 0,
+          "path": "cfdi-issuer-profile",
+          "permission": "subject.facturacion-electronica.cfdi-issuer-profile.read",
+          "icon": "document"
+        }
+      ]
+    }
+  ],
   "pages": [
     {
       "id": "facturacion-electronica.cfdi",
@@ -69,46 +105,14 @@
       "permission": "subject.facturacion-electronica.cfdi-issuer-profile.read"
     }
   ],
-  "menu": [
-    {
-      "id": "facturacion-electronica.root",
-      "label": "Facturación electrónica",
-      "order": 0,
-      "children": [
-        {
-          "id": "facturacion-electronica.cfdi-catalog",
-          "label": "Cfdi Catalog",
-          "order": 0,
-          "pageId": "facturacion-electronica.cfdi-catalog",
-          "path": "cfdi-catalog",
-          "permission": "subject.facturacion-electronica.cfdi-catalog.read"
-        },
-        {
-          "id": "facturacion-electronica.cfdi-document",
-          "label": "Cfdi Document",
-          "order": 0,
-          "pageId": "facturacion-electronica.cfdi-document",
-          "path": "cfdi-document",
-          "permission": "subject.facturacion-electronica.cfdi-document.read"
-        },
-        {
-          "id": "facturacion-electronica.cfdi-issuer-profile",
-          "label": "Cfdi Issuer Profile",
-          "order": 0,
-          "pageId": "facturacion-electronica.cfdi-issuer-profile",
-          "path": "cfdi-issuer-profile",
-          "permission": "subject.facturacion-electronica.cfdi-issuer-profile.read"
-        }
-      ]
-    }
-  ],
   "storage": {
-    "domain": "shared-nox-postgres"
+    "domain": "shared-nox-postgres",
+    "files": false
   },
   "resources": {
     "cfdi": "cfdi",
-    "cfdi-catalog": "cfdi_catalog",
-    "cfdi-document": "cfdi_document",
-    "cfdi-issuer-profile": "cfdi_issuer_profile"
+    "cfdi-catalog": "cfdi-catalog",
+    "cfdi-document": "cfdi-document",
+    "cfdi-issuer-profile": "cfdi-issuer-profile"
   }
 }
