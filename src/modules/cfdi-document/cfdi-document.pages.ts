@@ -52,7 +52,7 @@ export const cfdi_document_pages: KirletPageDecl[] = [
           form: {
             fields: [
               { name: "name", component: "input-text", label: "Nombre", required: true },
-              { name: "description", component: "input-text", label: "Descripción" },
+              { name: "description", component: "input-textarea", label: "Descripción" },
               { name: "ref", component: "input-text", label: "Referencia (_ref)" },
               { name: "status", component: "input-text", label: "status" },
               { name: "perfil_emision", component: "input-text", label: "perfil emision" },
@@ -60,7 +60,7 @@ export const cfdi_document_pages: KirletPageDecl[] = [
               { name: "receptor_nombre", component: "input-text", label: "receptor nombre" },
               { name: "emisor_rfc", component: "input-text", label: "emisor rfc" },
               { name: "emisor_nombre", component: "input-text", label: "emisor nombre" },
-              { name: "total", component: "input-number", label: "total" },
+              { name: "total", component: "input-money", label: "total" },
               { name: "uuid", component: "input-text", label: "uuid" },
               { name: "purchase_order_nombre", component: "input-text", label: "purchase order nombre" },
               { name: "purchase_order_id", component: "input-text", label: "purchase order id" },

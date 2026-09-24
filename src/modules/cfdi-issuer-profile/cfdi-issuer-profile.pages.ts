@@ -52,7 +52,7 @@ export const cfdi_issuer_profile_pages: KirletPageDecl[] = [
           form: {
             fields: [
               { name: "name", component: "input-text", label: "Nombre", required: true },
-              { name: "description", component: "input-text", label: "Descripción" },
+              { name: "description", component: "input-textarea", label: "Descripción" },
               { name: "ref", component: "input-text", label: "Referencia (_ref)" },
               { name: "rfc", component: "input-text", label: "rfc" },
               { name: "regimen_fiscal", component: "input-text", label: "regimen fiscal" },
@@ -61,7 +61,7 @@ export const cfdi_issuer_profile_pages: KirletPageDecl[] = [
               { name: "nombre_fiscal", component: "input-text", label: "nombre fiscal" },
               { name: "serie_default", component: "input-text", label: "serie default" },
               { name: "folio_siguiente", component: "input-number", label: "folio siguiente" },
-              { name: "branchoffice", component: "input-text", label: "branchoffice" },
+              { name: "branchoffice", component: "input-datalist", label: "branchoffice", optionsSource: "api://m/subject-configuracion/branchoffice?as=options&limite=1000" },
               { name: "is_default", component: "input-checkbox", label: "is default" },
             ],
           },

@@ -50,12 +50,12 @@ export const cfdi_catalog_pages: KirletPageDecl[] = [
           form: {
             fields: [
               { name: "name", component: "input-text", label: "Nombre", required: true },
-              { name: "description", component: "input-text", label: "Descripción" },
+              { name: "description", component: "input-textarea", label: "Descripción" },
               { name: "ref", component: "input-text", label: "Referencia (_ref)" },
               { name: "catalog", component: "input-text", label: "catalog" },
               { name: "code", component: "input-text", label: "code" },
-              { name: "vigencia_desde", component: "input-text", label: "vigencia desde" },
-              { name: "vigencia_hasta", component: "input-text", label: "vigencia hasta" },
+              { name: "vigencia_desde", component: "input-date", label: "vigencia desde" },
+              { name: "vigencia_hasta", component: "input-date", label: "vigencia hasta" },
             ],
           },
         },
